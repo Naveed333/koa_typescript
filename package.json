@@ -6,7 +6,7 @@
   "scripts": {
     "build": "tsc --build",
     "start": "ts-node-dev src/server.ts",
-    "test": "NODE_ENV-test PORT=7788 jest",
+    "test": "NODE_ENV=test PORT=7788 jest",
     "test:watch": "npm run test -- --watchAll"
   },
   "repository": {
@@ -56,7 +56,7 @@
   "jest": {
     "verbose":true,
     "collectCoverage":true,
-    "modulePathIgnorePattren":[
+    "modulePathIgnorePatterns":[
       "<rootDir>/node_modules/"
     ],
     "roots":[
@@ -65,11 +65,11 @@
     "transform":{
       "^.+\\.tsx?$":"ts-jest"
     },
-    "testEnviroment":"node",
-    "testPathIgnorePattrens":[
+    "testEnvironment":"node",
+    "testPathIgnorePatterns":[
       "/node_modules/"
     ],
-    "testRegex":"(/__tests__/.*|(\\.|)(test|spec))\\.tsx?$",
+    "testRegex":"(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$",
     "moduleFileExtensions":[
       "ts",
       "tsx",

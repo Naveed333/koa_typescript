@@ -1,12 +1,12 @@
 import Router from "koa-router";
-import { createTextChangeRange } from "typescript";
 const router = new Router();
+import { Context } from "koa";
 
-router.get("/ping", async (ctx) => {
+router.get("/ping", async (ctx: Context) => {
   try {
     ctx.body = {
       status: "success",
-      data: "pang",
+      data: "pong",
     };
   } catch (error) {}
 });
