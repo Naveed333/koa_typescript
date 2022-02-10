@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/Naveed333/koa_typescript#readme",
   "dependencies": {
+    "class-validator": "^0.13.2",
     "koa": "^2.13.4",
     "koa-bodyparser": "^4.3.0",
     "koa-logger": "^3.2.1",
@@ -54,23 +55,23 @@
     "ts-node-dev": "^1.1.8"
   },
   "jest": {
-    "verbose":true,
-    "collectCoverage":true,
-    "modulePathIgnorePatterns":[
+    "verbose": true,
+    "collectCoverage": true,
+    "modulePathIgnorePatterns": [
       "<rootDir>/node_modules/"
     ],
-    "roots":[
+    "roots": [
       "<rootDir>/__tests__"
     ],
-    "transform":{
-      "^.+\\.tsx?$":"ts-jest"
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
     },
-    "testEnvironment":"node",
-    "testPathIgnorePatterns":[
+    "testEnvironment": "node",
+    "testPathIgnorePatterns": [
       "/node_modules/"
     ],
-    "testRegex":"(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$",
-    "moduleFileExtensions":[
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$",
+    "moduleFileExtensions": [
       "ts",
       "tsx",
       "js",
